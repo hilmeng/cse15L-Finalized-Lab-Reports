@@ -60,6 +60,24 @@ Absolute path of `/Users/gabe/Desktop/cse15L/lecture1/messages/`. Here the `ls` 
 
 No arguments:
 ```
+Gabriels-MacBook-Pro-2:cse15L gabe$ cat
 
+```
+Absolute path of `/Users/gabe/Desktop/cse15L/`. When using `cat` with no arguments nothing happens and the terminal waits indefinitely for user input. It's not an error, but just nothing happens.
+
+Directory as an argument:
+```
+Gabriels-MacBook-Pro-2:cse15L gabe$ cat lecture1/
+cat: lecture1/: Is a directory
+```
+Absolute path of `/Users/gabe/Desktop/cse15L/`. When I used `cat` on a directory it gave me the error message that `lecture1` was a directory, and `cat` isn't meant to be used on those.
+
+File as an argument:
+```
+Gabriels-MacBook-Pro-2:messages gabe$ cat en-us.txt 
+Hello World!
+Gabriels-MacBook-Pro-2:messages gabe$
+```
+Absolute path of `/Users/gabe/Desktop/cse15L/lecture1/messages`. When I used cat on the file is spilled out it's context. This is not an error and is it's intended usage.
 
 
