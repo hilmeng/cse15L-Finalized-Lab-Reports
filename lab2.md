@@ -2,7 +2,7 @@
 
 ## Part 1
 
-![Image](code/Screen Shot 2024-04-23 at 8.58.39 PM.png)
+![Image](code.png)
 
 First curl request image
 
