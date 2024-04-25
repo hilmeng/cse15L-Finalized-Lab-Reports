@@ -31,3 +31,6 @@ Second curl request:
 Screenshot of using `ssh` without being prompted for a password
 ![Image](ssh.png)
 
+## Part 3
+
+During this lab I learned about `ssh` which was entirely new to me. I also learned about how to access servers and different machines as well. I also didn't know about `curl` before this lab, which I found really useful during the skill demo. Being able to access information from websites with curl is a really useful tool.
