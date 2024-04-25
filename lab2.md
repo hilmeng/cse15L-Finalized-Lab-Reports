@@ -2,15 +2,19 @@
 
 ## Part 1
 
+
+ChatServer code:
 ![Image](code.png)
 
-First curl request image
+First curl request:
+![Image](curl1.png)
 
 * `urlHandler` method was called from the `curl` request
 * The Argument passed from the curl command is a `url` with a query
 * The relevent fields that change is the `chatLog`, which is the string that represents the history of what we have already passed with `/add-message`.
 
-Second curl request image
+Second curl request:
+![Image](curl2.png)
 
 * `urlHandler` method was called from the `curl` request
 * The Argument passed from the curl command is a `url` with a query
@@ -19,14 +23,11 @@ Second curl request image
 ## Part 2
 
 `ls` with absolute path to private key:
-
-SSSSS
+![Image](privatekey.png)
 
 `ls` with absolute path to public key on ieng6
-
-SSSSS
+![Image](ieng6key.png)
 
 Screenshot of using `ssh` without being prompted for a password
-
-SSSSS
+![Image](ssh.png)
 
