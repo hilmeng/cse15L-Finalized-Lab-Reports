@@ -2,8 +2,7 @@
 
 ## Part 1
 
-Chatserver code image
-
+![Image](code/Screen Shot 2024-04-23 at 8.58.39 PM.png)
 
 First curl request image
 
