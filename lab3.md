@@ -65,3 +65,9 @@ static void reverseInPlace(int[] arr) {
 ```
 
 The changes that were made fixed the issue where the code was copying itself. To fix this, I made a new temp array to hold the value of one element during the swap, thus preserving the data. Additionall, by only iterating up to the middle of the array, the method can ensure that each element was only swapped once, instead of twice.
+
+## Part 2:
+
+I chose the `grep` command
+
+### 
