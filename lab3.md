@@ -2,7 +2,7 @@
 
 ## Part 1:
 
-### Code
+### Code:
 
 For part one I chose to use this method:
 ```
@@ -35,3 +35,5 @@ For part one I chose to use this method:
         assertArrayEquals(new int[] {1, 2, 2, 1}, input);
     }
 ```
+
+### Symptom
