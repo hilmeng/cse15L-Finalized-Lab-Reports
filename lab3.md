@@ -129,4 +129,53 @@ Here I used `-r` to search for the `<title>` tag in the folder `/plos`. This is 
 ### `-v` flag
 
 Example 1:
+```
+gabe@Gabriels-MacBook-Pro-2 technical % grep -v "<author>" /Users/gabe/Desktop/technical/biomed/1468-6708-3-1-hepple.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<graph xmlns="http://www.xces.org/ns/GrAF/1.0/">
+    <header>
+        <tagsDecl>
+            <tagUsage gi="tok" occurs="3946"/>
+        </tagsDecl>
+        <annotationSets>
+            <annotationSet name="xces" type="http://www.xces.org/schema/2003"/>
+        </annotationSets>
+    </header>
+    <region xml:id="penn-r0" anchors="24 36"/>
+    <node xml:id="penn-n0">
+        <link targets="penn-r0"/>
+```
+For this example `-v` was used on the specific `.xml` file in `/biomed` to search for all lines that do not contain the `"<author>"` tag. This is useful for filtering out certain information when searching files. The original text output was extremely long so I did not include all of it.
 
+Example 2:
+```
+gabe@Gabriels-MacBook-Pro-2 technical % grep -vr "<title>" /Users/gabe/Desktop/technical/plos/
+
+/Users/gabe/Desktop/technical/plos//pmed.0010050-s.xml:<?xml version="1.0" encoding="UTF-8"?>
+/Users/gabe/Desktop/technical/plos//pmed.0010050-s.xml:<graph xmlns="http://www.xces.org/ns/GrAF/1.0/">
+/Users/gabe/Desktop/technical/plos//pmed.0010050-s.xml:    <header>
+/Users/gabe/Desktop/technical/plos//pmed.0010050-s.xml:        <tagsDecl>
+/Users/gabe/Desktop/technical/plos//pmed.0010050-s.xml:            <tagUsage gi="s" occurs="16"/>
+```
+In this example I now recursively searched all the files within the `/plos` directory that do not contain the tag `"<title>"`. This is useful for when we want to search all files within a directory at once that do not contain a certain piece of information that we want to filter. The output was long so I did not include all of it.
+
+### `-n` flag
+
+Example 1:
+```
+gabe@Gabriels-MacBook-Pro-2 technical % grep -n "money" /Users/gabe/Desktop/technical/government/Media/Annual_fee.txt
+38:money, escrow funds, for instance, and that in turn generates
+gabe@Gabriels-MacBook-Pro-2 technical %
+```
+Here I used the `-n` flag to return the numbers of all the lines within the `Annual_fees.txt` file that contain the string "money". This is useful for if we want to search for the number of lines that contains our target within a certain document.
+
+Example 2:
+```
+gabe@Gabriels-MacBook-Pro-2 technical % grep -rn "money" /Users/gabe/Desktop/technical/government/
+/Users/gabe/Desktop/technical/government//About_LSC/ONTARIO_LEGAL_AID_SERIES-hepple.xml:49416:            <f name="base" value="money"/>
+/Users/gabe/Desktop/technical/government//About_LSC/ONTARIO_LEGAL_AID_SERIES-hepple.xml:49669:            <f name="base" value="money"/>
+/Users/gabe/Desktop/technical/government//About_LSC/ONTARIO_LEGAL_AID_SERIES-hepple.xml:49750:            <f name="base" value="money"/>
+/Users/gabe/Desktop/technical/government//About_LSC/ONTARIO_LEGAL_AID_SERIES-hepple.xml:50313:            <f name="base" value="money"/>
+/Users/gabe/Desktop/technical/government//About_LSC/Strategic_report-hepple.xml:22718:            <f name="base" value="money"/>
+```
+In this example I recursively searched for the line numbers that contain the string "money" in the `/government` folder. This went through all the subdirectories of `/government` and all of the files within those subdirectories. The full output was omitted for space.
