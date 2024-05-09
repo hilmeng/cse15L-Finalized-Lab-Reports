@@ -74,7 +74,7 @@ I chose the `grep` command, and will be using the flags `-i` (ignore case), `-r`
 
 ### `-i` flag
 
-Example 1:
+**Example 1:**
 ```
 gabe@Gabriels-MacBook-Pro-2 technical % grep -i "housing" /Users/gabe/Desktop/technical/biomed/*.xml
 
@@ -87,7 +87,7 @@ gabe@Gabriels-MacBook-Pro-2 technical % grep -i "housing" /Users/gabe/Desktop/te
 ```
 This example checked all `.xml` files in the `/biomed` directory for the string `"housing"`. This is useful for searching for words when you don't exactly know which cases to search for or if you don't care about them, so it ignores things like "Reference" or "REFERENCE." It went on for a long time so I cut it off after the first few lines so it didn't end up being 5 pages.
 
-Example 2:
+**Example 2:**
 ```
 gabe@Gabriels-MacBook-Pro-2 technical % grep -ir "sample" /Users/gabe/Desktop/technical/911report/
 
@@ -104,7 +104,7 @@ This example used checked for the string `"sample"` within all `.xml` files of `
 
 ### `-r` flag
 
-Example 1:
+**Example 1:**
 ```
 gabe@Gabriels-MacBook-Pro-2 technical % grep -r "dataset" /Users/gabe/Desktop/technical/plos/     
 
@@ -115,7 +115,7 @@ gabe@Gabriels-MacBook-Pro-2 technical % grep -r "dataset" /Users/gabe/Desktop/te
 ```
 This example uses `-r` to recursively search for the string `"dataset"` within the `/plos` directory, useful for searching all files within a specific directory. Again I did not copy the full output to save space.
 
-Example 2:
+**Example 2:**
 ```
 gabe@Gabriels-MacBook-Pro-2 technical % grep -r "<title>" /Users/gabe/Desktop/technical/plos/
 
@@ -128,7 +128,7 @@ Here I used `-r` to search for the `<title>` tag in the folder `/plos`. This is 
 
 ### `-v` flag
 
-Example 1:
+**Example 1:**
 ```
 gabe@Gabriels-MacBook-Pro-2 technical % grep -v "<author>" /Users/gabe/Desktop/technical/biomed/1468-6708-3-1-hepple.xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -147,7 +147,7 @@ gabe@Gabriels-MacBook-Pro-2 technical % grep -v "<author>" /Users/gabe/Desktop/t
 ```
 For this example `-v` was used on the specific `.xml` file in `/biomed` to search for all lines that do not contain the `"<author>"` tag. This is useful for filtering out certain information when searching files. The original text output was extremely long so I did not include all of it.
 
-Example 2:
+**Example 2:**
 ```
 gabe@Gabriels-MacBook-Pro-2 technical % grep -vr "<title>" /Users/gabe/Desktop/technical/plos/
 
@@ -161,7 +161,7 @@ In this example I now recursively searched all the files within the `/plos` dire
 
 ### `-n` flag
 
-Example 1:
+**Example 1:**
 ```
 gabe@Gabriels-MacBook-Pro-2 technical % grep -n "money" /Users/gabe/Desktop/technical/government/Media/Annual_fee.txt
 38:money, escrow funds, for instance, and that in turn generates
@@ -169,7 +169,7 @@ gabe@Gabriels-MacBook-Pro-2 technical %
 ```
 Here I used the `-n` flag to return the numbers of all the lines within the `Annual_fees.txt` file that contain the string "money". This is useful for if we want to search for the number of lines that contains our target within a certain document.
 
-Example 2:
+**Example 2:**
 ```
 gabe@Gabriels-MacBook-Pro-2 technical % grep -rn "money" /Users/gabe/Desktop/technical/government/
 /Users/gabe/Desktop/technical/government//About_LSC/ONTARIO_LEGAL_AID_SERIES-hepple.xml:49416:            <f name="base" value="money"/>
