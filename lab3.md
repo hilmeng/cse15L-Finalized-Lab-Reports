@@ -68,6 +68,13 @@ The changes that were made fixed the issue where the code was copying itself. To
 
 ## Part 2:
 
-I chose the `grep` command
+Note: I used https://linuxcommand.org/lc3_man_pages/grep1.html as my source for all of the examples
 
-### 
+I chose the `grep` command, and will be using the flags `-i` (ignore case), `-r` (recursive), `-v` (invert match), and `n` (line number).
+
+### `-i` flag
+
+Example 1:
+
+
+
